@@ -1,0 +1,119 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Junction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('img/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow: hidden;
+            animation: backgroundMove 10s linear infinite;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 800px;
+            padding: 20px;
+            
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #d7ccc8;
+            animation: slideInFromLeft 1.5s ease-in-out;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        .content .welcome-btn {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background: #795548;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, background 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .content .welcome-btn:hover {
+            transform: scale(1.1);
+            background: #a1887f;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideInFromLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes backgroundMove {
+            from { background-position: 0 0; }
+            to { background-position: 100% 0; }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="C:\Users\ADMIN\Desktop\Competition\img\image.jpeg" alt="Café Interior">
+            <h1>Welcome to Chai Junction</h1>
+            <p>Where every sip and bite is a moment of pure delight. Come experience the best coffee in town!</p>
+            <a class="welcome-btn" href="index.html">Welcome</a>
+        </div>
+    </div>
+</body>
+</html>
